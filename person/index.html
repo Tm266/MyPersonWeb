@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" >
+
+  <title>M的个人网站	</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+      /* body{
+          height: 100px;
+          width: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      } */
+      .box {
+          width: 50px;
+          height: 50px;
+          background: #ffffff1c url(love.png) no-repeat;
+          background-position: left;
+          background-size: cover;
+          cursor: pointer;
+      }
+  
+      .boxactive {
+          background-position: right;
+          transition: background .75s steps(28);
+      }
+  </style>
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex justify-content-center align-items-center header-transparent">
+
+    <nav id="navbar" class="navbar">
+      <ul>
+		
+        <li><a class="nav-link scrollto active" href="#hero">主页</a></li>
+        <li><a class="nav-link scrollto" href="#about">关于</a></li>
+        <li><a class="nav-link scrollto" href="#" onclick="window.alert('暂无😊')">经历</a></li>
+        <li><a class="nav-link scrollto" href="#services">简介</a></li>
+        <li><a class="nav-link scrollto " href="#portfolio">照片墙</a></li>
+        <li class="dropdown"><a href="#"><span>待更新</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="#">0-1</a></li>
+            <li class="dropdown"><a href="#"><span>敬请期待</span> <i class="bi bi-chevron-right"></i></a>
+              <ul>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">0-2</a></li>
+            <li><a href="#">0-3</a></li>
+            <li><a href="#">0-4</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link scrollto" href="#contact">联系我</a></li>
+		
+      </ul>
+		
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+	
+  </header><!-- End Header -->
+	
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+	  
+    <div class="hero-container">
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+      <h1>谭明硕</h1>
+      <h2>一名大一学生，现代移动通信技术专业</h2>
+	 
+      <a href="#about" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	<!-- 背景音乐 -->
+	  <audio autoplay="autoplay" controls="controls" loop="loop" preload="auto"
+	                  src="LastSummer.mp3">
+	  </audio>
+	  <!-- 彩蛋按钮 --><div id="box" class="box" ></div>
+		<script>
+		    var box = document.querySelectorAll('.box')
+		    box[0].addEventListener('click', () => {
+		        box[0].classList.add('boxactive')
+				alert("恭喜发现小彩蛋，祝你好运ღ( ´･ᴗ･` )💕")
+		        // setTimeout(() => {
+		        //     box[0].classList.remove('boxactive')
+		        // }, 750)
+		        // 750ms后移除class：boxactive
+		    })
+		</script>
+    </div>
+	
+  </section><!-- End Hero -->
+	
+  <main id="main">
+
+    <!-- ======= About Me Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <span>About Me</span>
+          <h2>About Me</h2>
+		  
+        </div>
+
+        <div class="row">
+          <div class="image col-lg-4 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
+          <div class="col-lg-8 d-flex flex-column align-items-stretch">
+            <div class="content ps-lg-4 d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="bi bi-chevron-right"></i> <strong>姓名:</strong> <span>谭明硕</span></li>
+                    <!-- <li><i class="bi bi-chevron-right"></i> <strong>网站:</strong> <span>mingming-4gkxmofped7eb63b-1253164392.tcloudbaseapp.com</span></li> -->
+                    <li><i class="bi bi-chevron-right"></i> <strong>电话:</strong> <span>17527611536</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>住址:</strong> <span>河南省南阳市镇平县侯集镇</span></li>
+					<li><i class="bi bi-chevron-right"></i> <strong>爱好:</strong> <span>写bug、玩游戏</span></li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="bi bi-chevron-right"></i> <strong>生日:</strong> <span>2002-9-18</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>性格:</strong> <span>不喜约束、有点内向、偶尔emo</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>邮箱:</strong> <span>2663899831@qq.com</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>目标:</strong> <span>做最酷的自己</span></li>
+                  </ul>
+                </div>
+              </div>
+             <div class="row mt-n4">
+                <div class="col-md-6 mt-5 d-md-flex align-items-md-stretch">
+                  <!-- <div class="count-box">
+                   <i class="bi bi-emoji-smile" style="color: #20b38e;"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="1044" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>度过的周末时光</strong> </p>
+                  </div> -->
+				</div>
+                <div class="col-md-6 mt-5 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <!-- <i class="bi bi-journal-richtextr" style="color: #8a1ac2;" ></i>
+                    <span data-purecounter-start="0" data-purecounter-end="" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong></strong> </p> -->
+					
+                  </div>
+                </div>
+                <div class="col-md-6 mt-5 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-award" style="color: #ffb459;"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>奖项</strong> 美国《时代周刊》2006年度风云人物，《感动中国》2008年度人物，联合国2019年度“地球卫士奖”联合获奖人，国际奥委会2022年”奥林匹克奖杯“获奖者</p>
+                  </div>
+                </div>
+				<div class="col-md-6 mt-5 d-md-flex align-items-md-stretch">
+				  <div class="count-box">
+				    <i class="bi bi-clock" style="color: #2cbdee;"></i>
+				    <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+				    <p><strong>自主项目</strong><a href="http://www.eachnet.com/">“易趣网模仿项目—html”<--点我</a> <a href="portfolio-details.html"><font color="red">“电影购票系统—java”<--还有我</a></font></p>
+				  </div>
+				</div>
+				
+              </div>
+            </div><!-- End .content-->
+			
+            <div class="skills-content ps-lg-4">
+				<div >学过的编程语言：</div>
+              <div class="progress">
+                <span class="skill">HTML <i class="val">99%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">CSS <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">JavaScript <i class="val">25%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+			  <div class="progress">
+			    <span class="skill">Java<i class="val">5%</i></span>
+			    <div class="progress-bar-wrap">
+			      <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+			    </div>
+			  </div>
+			  <div class="progress">
+			    <span class="skill">SQL<i class="val">5%</i></span>
+			    <div class="progress-bar-wrap">
+			      <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+			    </div>
+			  </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Me Section -->
+
+    <!-- ======= My Resume Section ======= -->
+	<!-- 我的简历 -->
+	<!-- 暂无简历 -->
+    <!-- End My Resume Section -->
+
+    <!-- ======= About Myself ======= -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-title">
+          <span>About Myself</span>
+          <h2>About Myself</h2>
+		  <h5>一名现代移动通信专业的大一学生🤓</h5><br />
+		  <h5>生性只对感兴趣的事物充满热情😊</h5><br />
+		  <h5>"喵喵教"的忠诚信徒💖</h5><br />
+		  <h5>喜欢听歌，热爱编程，没事边敲边摇🎶🎶</h5><br />
+		  <h5>丢了曾经的梦想，换上新的梦想起航〽️</h5><br />
+		  <h5>做最酷的自己😎</h5><br />
+		  <h5>正在努力保住发量</h5>
+			<p><font size="20">... ...</font></p>
+		  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+		  最伟大的思想和行动往往需要最微不足道的开始
+		  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+        </div>
+      </div>
+    </section><!-- End About Myself -->
+	<div class="section-title">
+	  <span>Just say something</span>
+	  <h2>Just say something</h2>
+	</div>
+    <!-- ======= Testimonials Section ======= -->
+	<!-- 我的朋友 -->
+    <section id="testimonials" class="testimonials">
+      <div class="container position-relative">
+
+        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <!-- <h3>李 柽</h3> -->
+                
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  等忙完这一阵，就可以忙下一阵了。
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <!-- <h3>郭 哲</h3> -->
+                
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  生活不止眼前的苟且，还有更多的狗血。
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <!-- <h3>刘金鹏</h3> -->
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                 你只需要看着别人的精彩，而老天对你自有安排。
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <!-- <h3>耿淑玲</h3> -->
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                 不要轻易看不起谁，就算是杀马特，发量都比你多。
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <!-- <h3>xxx</h3> -->
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  活了这么多年，一直搞不明白一件事，拉钩为什么要上吊？
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section>
+    <!-- ======= My photo Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <span>My Photo</span>
+          <h2>My Photo</h2>
+        </div>
+
+        <ul id="portfolio-flters" class="d-flex justify-content-center">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-app">App</li>
+          <li data-filter=".filter-card">life</li>
+          <li data-filter=".filter-web">Web</li>
+        </ul>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>抖音</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>快手</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>图书馆</h4>
+              <p>Life</p>
+              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Web 2</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>微信</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>湖边</h4>
+              <p>Life</p>
+              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+		<!-- life开始 -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>湖边</h4>
+              <p>Life</p>
+              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+		    <div class="portfolio-img"><img src="assets/img/portfolio/life1 (1).jpg" class="img-fluid" alt=""></div>
+		    <div class="portfolio-info">
+		      <h4>001</h4>
+		      <p>Life</p>
+		      <a href="assets/img/portfolio/life1 (1).jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+		      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+		    </div>
+		  </div>
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+		    <div class="portfolio-img"><img src="assets/img/portfolio/life1 (2).jpg" class="img-fluid" alt=""></div>
+		    <div class="portfolio-info">
+		      <h4>002</h4>
+		      <p>Life</p>
+		      <a href="assets/img/portfolio/life1 (2).jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+		      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+		    </div>
+		  </div>
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+		    <div class="portfolio-img"><img src="assets/img/portfolio/life1 (3).jpg" class="img-fluid" alt=""></div>
+		    <div class="portfolio-info">
+		      <h4>003</h4>
+		      <p>Life</p>
+		      <a href="assets/img/portfolio/life1 (3).jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+		      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+		    </div>
+		  </div>
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+		    <div class="portfolio-img"><img src="assets/img/portfolio/life1 (4).jpg" class="img-fluid" alt=""></div>
+		    <div class="portfolio-info">
+		      <h4>004</h4>
+		      <p>Life</p>
+		      <a href="assets/img/portfolio/life1 (4).jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+		      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+		    </div>
+		  </div>
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+		    <div class="portfolio-img"><img src="assets/img/portfolio/life1 (5).jpg" class="img-fluid" alt=""></div>
+		    <div class="portfolio-info">
+		      <h4>005</h4>
+		      <p>Life</p>
+		      <a href="assets/img/portfolio/life1 (5).jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+		      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+		    </div>
+		  </div>
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+		    <div class="portfolio-img"><img src="assets/img/portfolio/life1 (6).jpg" class="img-fluid" alt=""></div>
+		    <div class="portfolio-info">
+		      <h4>006</h4>
+		      <p>Life</p>
+		      <a href="assets/img/portfolio/life1 (6).jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+		      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+		    </div>
+		  </div>
+		<!-- life结束 -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+		  
+		  
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+		    <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-10.png" class="img-fluid" alt=""></div>
+		    <div class="portfolio-info">
+		      <h4>网页二维码</h4>
+		      <p>App</p>
+		      <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+		      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+		    </div>
+		  </div>
+
+        </div>
+
+      </div>
+    </section><!-- End My photo Section -->
+
+    <!-- ======= Pricing Section ======= -->
+   <!-- End Pricing Section -->
+
+    <!-- ======= Contact Me Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Contact Me</span>
+          <h2>Contact Me</h2>
+          <p>如果你想了解我，欢迎给我发信息，很高兴和你做朋友</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box">
+                  <i class="bx bx-share-alt"></i>
+                  <h3>社交账号</h3>
+                  <div class="social-links">
+                    <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-envelope"></i>
+                  <h3>Email Me</h3>
+                  <p>2663899831@qq.com</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-phone-call"></i>
+                  <h3>Call Me</h3>
+                  <p>17527611536</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="你的名字" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="你的邮箱" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="标题" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="6" placeholder="信息" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <!-- <div class="error-message"></div> -->
+                <div class="sent-message">你的消息正在发送，谢谢你~</div>
+              </div>
+              <div class="text-center"><button type="submit">发送消息</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Me Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>☆*: .｡. o(≧▽≦)o .｡.:*☆</h3>
+	  <p>暂无域名，无备案</p>
+      <div class="social-links">
+        <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>M-2.0</span></strong>. 谭明硕
+      </div>
+      
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
