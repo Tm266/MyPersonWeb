@@ -111,22 +111,24 @@ li{
     color: #d576ba;
 }
 /* 波浪形底部 */
-.custom-shape-divider-top-1658828810 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1658828810 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 175px;
-}
-
-.custom-shape-divider-top-1658828810 .shape-fill {
-    fill: #FFFFFF;
-}
+/* 波浪形底部 */
+			.custom-shape-divider-bottom-1658832029 {
+			    position: absolute;
+			    bottom: 0;
+			    left: 0;
+			    width: 100%;
+			    overflow: hidden;
+			    line-height: 0;
+			    transform: rotate(180deg);
+			}
+			
+			.custom-shape-divider-bottom-1658832029 svg {
+			    position: relative;
+			    display: block;
+			    width: calc(112% + 1.3px);
+			    height: 235px;
+			}
+			
+			.custom-shape-divider-bottom-1658832029 .shape-fill {
+			    fill: #AAAAFF;
+			}

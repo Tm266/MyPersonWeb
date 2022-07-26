@@ -9,12 +9,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #aaaaff;
+    background-color: #ffffff;
 }
 .text{
     /* 相对定位 */
     position: relative;
-    color: #fff;
+    color: #000000;
     font-size: 62px;
     /* 字间距 */
     letter-spacing: 3px;
@@ -40,7 +40,7 @@ body{
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #fff;
+    background-color: #000000;
     /* 执行光标动画: 动画名 时长 线性的 无限次播放 */
     animation: blink 1s linear infinite;
 }
