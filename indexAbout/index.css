@@ -1,0 +1,211 @@
+*{
+    /* 初始化 取消页面的内外边距 */
+    margin: 0;
+    padding: 0;
+    /* 这个是告诉浏览器：你想要设置的边框和内边距的值是包含在总宽高内的 */
+    box-sizing: border-box;
+}
+.wrapper{
+    /* 固定定位 窗口滚动也不会移动 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* 渐变背景 */
+    background: linear-gradient(200deg,#F9F871,#2C73D2);
+    /* 将元素剪切为一个圆形【25px表示圆的直径】【calc(100% - 45px) 45px表示圆心】 */
+    clip-path: circle(25px at calc(100% - 45px) 45px);
+    /* 过渡动画 */
+    transition: all 0.3s ease-in-out;
+}
+.menu-btn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 2;
+    /* 渐变背景 */
+    background: linear-gradient(200deg,#F9F871,#2C73D2);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    /* 这里也加个过渡动画 */
+    transition: all 0.3s ease;
+}
+/* 把复选框隐藏 */
+#menu_btn{
+    display: none;
+}
+#menu_btn:checked ~ .wrapper{
+    /* 将元素剪切为一个圆形 75%表示圆的直径 */
+    clip-path: circle(75%);
+}
+#menu_btn:checked ~ .menu-btn{
+    color: #FF9671;
+    background: #fff;
+}
+/* 当复选框为选中态时，改变图标 */
+#menu_btn:checked ~ .menu-btn i::before{
+    content: "\f00d";
+}
+.wrapper ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    list-style: none;
+    text-align: center;
+}
+.wrapper ul li{
+    margin: 30px 0px;
+}
+.wrapper ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 5px 50px;
+    position: relative;
+    line-height: 50px;
+}
+.wrapper ul li a::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    z-index: -1;
+    border-radius: 50px;
+    left: 0px;
+    transform: scaleY(0);
+    /* 加个动画过渡 */
+    transition: transform 0.3s ease;
+}
+.wrapper ul li a:hover::after{
+    transform: scaleY(1);
+}
+.wrapper ul li a:hover{
+    color: #d576ba;
+}
+
+/* 
+ */
+body{
+    /* 初始化 取消内外边距 */
+    margin: 0;
+    padding: 0;
+}
+#container{
+    /* 100%窗口高度 */
+    height: 100vh;
+}
+.bg{
+    /* 绝对定位 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.sun{
+    margin: 0;
+    padding: 0;
+    /* 绝对定位 水平垂直居中 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    height: 600px;
+    background-color: orange;
+    border-radius: 50%;
+}
+.moon{
+    margin: 0;
+    padding: 0;
+    /* 绝对定位 水平垂直居中 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* 计算得出月亮的位置 */
+    transform: translate(calc(-50% + -160px),calc(-50% + -180px));
+    width: 600px;
+    height: 600px;
+    /* 通过阴影绘制月亮 */
+    box-shadow: 160px 180px 0 cyan;
+    border-radius: 50%;
+}
+.sea{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 35%;
+    /* 背景模糊制造大海的感觉 */
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    z-index: 100;
+}
+.sun,
+.moon,
+.sun-box,
+.moon-box,
+.bg{
+    /* 添加动画过渡 */
+    transition: all 1s ease-in-out;
+}
+.sun-box,
+.moon-box{
+    /* 相对定位 */
+    position: relative;
+    /* 溢出隐藏 */
+    overflow: hidden;
+}
+/* 白天 */
+.light .sun-box{
+    height: 100%;
+}
+.light .moon-box{
+    height: 0;
+}
+.light .bg{
+    background-color: #ffeea2;
+}
+/* 夜晚 */
+.dark .sun-box{
+    height: 0;
+}
+.dark .moon-box{
+    height: 100%;
+}
+.dark .bg{
+    background-color: #040720;
+}
+/* 切换按钮样式 */
+.btn-box{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 101;
+    display: flex;
+    flex-direction: row;
+}
+.btn-box div{
+    background: rgba(255,255,255,0.7);
+    color: #000;
+    width: 90px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-box div:hover{
+    background: #fff;
+}

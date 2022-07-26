@@ -3,16 +3,21 @@
 
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<!-- 支持移动设备 -->
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 
-    <title>梦开始的地方</title>
-	<!-- 引用字体 -->
-	<link href='http://cdn.repository.webfont.com/webfonts/nomal/149634/45904/62dfd6f0f629d801648b387d.css' rel='stylesheet' type='text/css' />
-	<link href='http://cdn.repository.webfont.com/webfonts/nomal/149634/45803/62df4f14f629d80f4c8d0a97.css' rel='stylesheet' type='text/css' />
-    
+    <title>全屏导航栏菜单</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="indexAbout/index.css">
+	<!-- 日月交替 -->
 	<link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="indexAbout/shouye.css">
-	<link rel="stylesheet" href="indexAbout/dazi.css">
+	<!-- <link rel="stylesheet" href="welcome.css"> -->
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<script>
+	    function change(str){
+	        document.getElementById('container').setAttribute('class',str);
+	    }
+	</script>
 </head>
 
 <body>
@@ -20,23 +25,32 @@
     <label class="menu-btn" for="menu_btn">
         <i class="fa fa-bars" aria-hidden="true"></i>
     </label>
-	
     <div class="con">
-		<div class="text" >
-		    <span>欢迎来到这里</span>
-		</div>
+		
     </div>
-	<div class="custom-shape-divider-bottom-1658832029">
-	    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-	        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-	        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-	        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
-	    </svg>
+	<div class="btn-box">
+	    <div onclick="change('light')">
+	        <i class="fa fa-sun-o" aria-hidden="true"></i>愉快的一天
+	    </div>
+	    <div onclick="change('dark')">
+	        <i class="fa fa-moon-o" aria-hidden="true"></i>晚上好啊
+	    </div>
 	</div>
+	<div class="dark" id="container">
+	    <div class="bg"></div>
+	    <div class="moon-box">
+	        <div class="moon"></div>
+	    </div>
+	    <div class="sun-box">
+	        <div class="sun"></div>
+	    </div>
+	    <div class="sea"></div>
+	</div>
+
     <div class="wrapper">
         <ul class="menu">
             <li class="css30dd76306a24882"><a href="person/index.html">谭明硕</a></li>
-			<li class="css30dd76306a24882"><a href="indexAbout/loding.html">刘金鹏</a></li>
+        	<li class="css30dd76306a24882"><a href="indexAbout/loding.html">刘金鹏</a></li>
             <li><a href="indexAbout/about.html">关于网站</a></li>
         </ul>
     </div>
