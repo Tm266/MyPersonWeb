@@ -51,6 +51,10 @@
     /* 这里也加个过渡动画 */
     transition: all 0.3s ease;
 }
+/* 引用字体 */
+li{
+	font-family:'cyjianxk30dd7184fb24882';
+}
 /* 把复选框隐藏 */
 #menu_btn{
     display: none;
