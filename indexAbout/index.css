@@ -170,13 +170,13 @@ body{
 	    /* 绝对定位 水平垂直居中 */
 	    position: absolute;
 	    top: 50%;
-	    left: 50%;
+	    left: 55%;
 	    /* 计算得出月亮的位置 */
 	    transform: translate(calc(-50% + -160px),calc(-50% + -180px));
 	    width: 450px;
 	    height: 450px;
 	    /* 通过阴影绘制月亮 */
-	    box-shadow: 135px 145px 0 cyan;
+	    box-shadow: 115px 115px 0 cyan;
 	    border-radius: 50%;	
 	}
 }
@@ -185,7 +185,7 @@ body{
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 25%;
+    height: 40%;
     /* 背景模糊制造大海的感觉 */
     backdrop-filter: blur(100px);
     -webkit-backdrop-filter: blur(100px);
