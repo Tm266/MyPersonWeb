@@ -94,6 +94,7 @@
 }
 
 /* 
+	昼夜动画交替
  */
 body{
     /* 初始化 取消内外边距 */
@@ -112,39 +113,79 @@ body{
     width: 100%;
     height: 100%;
 }
-.sun{
-    margin: 0;
-    padding: 0;
-    /* 绝对定位 水平垂直居中 */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 600px;
-    height: 600px;
-    background-color: orange;
-    border-radius: 50%;
+/* 
+
+
+添加手机屏幕自适应
+ 
+ 
+ */
+@media screen and (max-width:400px){
+	.sun{
+	    margin: 0;
+	    padding: 0;
+	    /* 绝对定位 水平垂直居中 */
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%,-50%);
+	    width: 350px;
+	    height: 350px;
+	    background-color: orange;
+	    border-radius: 50%;
+	}
+	.moon{
+	    margin: 0;
+	    padding: 0;
+	    /* 绝对定位 水平垂直居中 */
+	    position: absolute;
+	    top: 50%;
+	    left: 55%;
+	    /* 计算得出月亮的位置 */
+	    transform: translate(calc(-50% + -160px),calc(-50% + -180px));
+	    width: 350px;
+	    height: 350px;
+	    /* 通过阴影绘制月亮 */
+	    box-shadow: 125px 105px 0 cyan;
+	    border-radius: 50%;	
+	}
 }
-.moon{
-    margin: 0;
-    padding: 0;
-    /* 绝对定位 水平垂直居中 */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    /* 计算得出月亮的位置 */
-    transform: translate(calc(-50% + -160px),calc(-50% + -180px));
-    width: 600px;
-    height: 600px;
-    /* 通过阴影绘制月亮 */
-    box-shadow: 160px 180px 0 cyan;
-    border-radius: 50%;
+@media screen and (min-width:400px){
+	.sun{
+	    margin: 0;
+	    padding: 0;
+	    /* 绝对定位 水平垂直居中 */
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%,-50%);
+	    width: 450px;
+	    height: 450px;
+	    background-color: orange;
+	    border-radius: 50%;
+	}
+	.moon{
+	    margin: 0;
+	    padding: 0;
+	    /* 绝对定位 水平垂直居中 */
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    /* 计算得出月亮的位置 */
+	    transform: translate(calc(-50% + -160px),calc(-50% + -180px));
+	    width: 450px;
+	    height: 450px;
+	    /* 通过阴影绘制月亮 */
+	    box-shadow: 135px 145px 0 cyan;
+	    border-radius: 50%;	
+	}
 }
+
 .sea{
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 35%;
+    height: 25%;
     /* 背景模糊制造大海的感觉 */
     backdrop-filter: blur(100px);
     -webkit-backdrop-filter: blur(100px);
