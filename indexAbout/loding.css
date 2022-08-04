@@ -206,3 +206,33 @@ body{
         transform: rotate(-180deg);
     }
 }
+/* 添加手机屏幕自适应 */
+
+@media screen and (max-width:400px){
+	.loader-text div{
+	    width: 30px;
+	    height: 36px;
+	    color: #fff;
+	    font-size: 15px;
+	    margin: 0 20px;
+	    /* 绝对定位 */
+	    position: absolute;
+	    /* 默认隐藏+旋转180度 */
+	    opacity: 0;
+	    transform: rotate(180deg);
+	    /* 执行文字移动动画 */
+	    animation: move 2s linear infinite;
+	}
+	/* 文字下的投影 */
+	.loader-text div::after{
+	    content: "";
+	    width: 5px;
+	    height: 2px;
+	    border-radius: 50%;
+	    background-color: rgba(255,255,255,0.15);
+	    position: absolute;
+	    bottom: -40px;
+	    left: 50%;
+	    margin-left: -5px;
+	}
+}
