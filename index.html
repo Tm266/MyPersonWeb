@@ -1,472 +1,642 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 
 <head>
-    <!-- 基础信息 -->
-    <meta charset="utf-8">
-    <meta http-equiv="Access-Control-Allow-Origin" content="*">
-    <meta name="renderer" content="webkit" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="force-rendering" content="webkit" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="个人主页">
-    <meta name="keywords" content="个人主页">
-    <meta name="author" content="M">
-    <title>导航页</title>
-    <!-- jQuery -->
-    <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.5.1/jquery.min.js"></script>
-    <!-- 引入样式 -->
-    <link rel="stylesheet" type="text/css"
-        href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/5.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="./css/mobile.css">
-    <link rel="stylesheet" type="text/css" href="./css/font.css">
-    <link rel="stylesheet" type="text/css" href="./css/loading.css">
-    <link rel="stylesheet" type="text/css" href="./css/animation.css">
-    <link rel="stylesheet" type="text/css" href="./css/cursor.css">
-    <link rel="icon" href="./favicon.ico">
-    <link rel="apple-touch-icon" href="./img/icon/apple-touch-icon.png">
-    <!-- Izitoast -->
-    <link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/izitoast/1.4.0/css/iziToast.min.css">
-    <script type="text/javascript"
-        src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/izitoast/1.4.0/js/iziToast.min.js">
-    </script>
-    <!-- Aplayer -->
-    <link rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css"
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js" crossorigin="anonymous"
-        referrerpolicy="no-referrer"></script>
-    <!-- IE Out -->
-    <script>
-        if ( /*@cc_on!@*/ false || (!!window.MSInputMethodContext && !!document.documentMode)) window.location.href =
-            "/upgrade-your-browser/index.html?referrer=" + encodeURIComponent(window.location.href);
-    </script>
-    <!-- 统计 -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" >
 
+  <title>M的个人网站	</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+      /* body{
+          height: 100px;
+          width: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      } */
+      .box {
+          width: 50px;
+          height: 50px;
+          background: #ffffff1c url(love.png) no-repeat;
+          background-position: left;
+          background-size: cover;
+          cursor: pointer;
+      }
+  
+      .boxactive {
+          background-position: right;
+          transition: background .75s steps(28);
+      }
+  </style>
 </head>
 
 <body>
-    <!--加载动画-->
-    <div id="loading-box">
-        <div class="loading-left-bg"></div>
-        <div class="loading-right-bg"></div>
-        <div class="spinner-box">
-            <div class="loader">
-                <div class="inner one"></div>
-                <div class="inner two"></div>
-                <div class="inner three"></div>
-            </div>
-            <div class="loading-word">
-                <p class="loading-title">欢迎来到导航页</p>
-                <span id="loading-text">加载中</span>
-            </div>
-        </div>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex justify-content-center align-items-center header-transparent">
+
+    <nav id="navbar" class="navbar">
+      <ul>
+		
+        <li><a class="nav-link scrollto active" href="#hero">主页</a></li>
+        <li><a class="nav-link scrollto" href="#about">关于</a></li>
+        <li><a class="nav-link scrollto" href="#" onclick="window.alert('暂无😊')">经历</a></li>
+        <li><a class="nav-link scrollto" href="#services">简介</a></li>
+        <li><a class="nav-link scrollto " href="#portfolio">照片墙</a></li>
+        <li class="dropdown"><a href="#"><span>待更新</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="#">0-1</a></li>
+            <li class="dropdown"><a href="#"><span>敬请期待</span> <i class="bi bi-chevron-right"></i></a>
+              <ul>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">0-2</a></li>
+            <li><a href="#">0-3</a></li>
+            <li><a href="#">0-4</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link scrollto" href="#contact">联系我</a></li>
+		
+      </ul>
+		
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+	
+  </header><!-- End Header -->
+	
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+	  
+    <div class="hero-container">
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+      <h1>谭明硕</h1>
+      <h2>一名大一学生，现代移动通信技术专业</h2>
+	 
+      <a href="#about" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	<!-- 背景音乐 -->
+	  <audio autoplay="autoplay" controls="controls" loop="loop" preload="auto"
+	                  src="LastSummer.mp3">
+	  </audio>
+	  <!-- 彩蛋按钮 --><div id="box" class="box" ></div>
+		<script>
+		    var box = document.querySelectorAll('.box')
+		    box[0].addEventListener('click', () => {
+		        box[0].classList.add('boxactive')
+				alert("恭喜发现小彩蛋，祝你好运ღ( ´･ᴗ･` )💕")
+		        // setTimeout(() => {
+		        //     box[0].classList.remove('boxactive')
+		        // }, 750)
+		        // 750ms后移除class：boxactive
+		    })
+		</script>
     </div>
-    <section id="section" class="section">
-        <!-- 背景图片 -->
-        <div class="bg-all">
-            <img id="bg" onerror="this.classList.add('error');"></img>
-            <div class="cover"></div>
+	
+  </section><!-- End Hero -->
+	
+  <main id="main">
+
+    <!-- ======= About Me Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <span>About Me</span>
+          <h2>About Me</h2>
+		  
         </div>
-        <!--主体内容-->
-        <main id="main" class="main">
-            <div class="container" id="container">
-                <div class="row" id="row">
-                    <div class="col left">
-                        <!--基本信息-->
-                        <div class="main-left">
-                            <!--Logo-->
-                            <div class="main-img">
-                                <img src="./img/icon/logo.png" alt="img">
-                                <div class="img-title">
-                                    <span class="img-title">M</span>
-                                    <span class="img-text">.m</span>
-                                </div>
-                            </div>
-                            <!--介绍信息-->
-                            <div class="message cards" id="switchmore">
-                                <div class="des" id="des"><i class="iconfont icon-yinhao-copy-copy"></i>
-                                    <div class="des-title"><span id="change">Hello&nbsp;World&nbsp;!</span><br /><span
-                                            id="change1">一个建立于 21 世纪的小站，织音博客分享</span></div>
-                                    <i class="iconfont icon-yinhao-copy"></i>
-                                </div>
-                            </div>
-                            <!--社交链接-->
-                            <div class="social" id="social">
-                                <a href="#" class="link" id="github" target="_blank">
-                                    <i class="iconfont icon-github"></i>
-                                </a>
-                                <a href="http://wpa.qq.com/msgrd?v=3&uin=3402674724&site=qq&menu=yes" class="link"
-                                    id="qq" target="_blank">
-                                    <i class="iconfont icon-QQ"></i>
-                                </a>
-                                <a href="mailto:3402674724@qq.com" class="link" id="email">
-                                    <i class="iconfont icon-youxiang"></i>
-                                </a>
-                                <a href="https://www.itzhiyin.cn" class="link" id="telegram" target="_blank">
-                                    <i class="iconfont icon-telegram"></i>
-                                </a>
-                                <a href="https://www.itzhiyin.cn" class="link" id="twitter" target="_blank">
-                                    <i class="iconfont icon-twitter"></i>
-                                </a>
-                                <a id="link-text">通过这里联系我</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--第二屏 Logo-->
-                    <div class="logo cards" style="display: none" id="changemore">
-                        <a class="logo-text">www.itzhiyin.cn</a>
-                    </div>
-                    <div class="col right">
-                        <div class="main-right">
-                            <!--功能区-->
-                            <div class="row rightone" id="rightone">
-                                <div class="col hitokotos">
-                                    <!--一言-->
-                                    <div class="hitokoto cards" id="hitokoto">
-                                        <!--切换音乐-->
-                                        <div class="open-music fixed-top" id="open-music">
-                                            <i class="iconfont icon-music"></i>
-                                            <span>&nbsp;打开音乐播放器</span>
-                                        </div>
-                                        <!--切换音乐结束-->
-                                        <div class="hitokoto-all">
-                                            <div class="hitokoto-text"><span id="hitokoto_text">每一个人都应该明确自己的方向和位置</span>
-                                            </div>
-                                            <div class="hitokoto-from">-「&nbsp;<span id="from_text">织音</span>&nbsp;」
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--音乐-->
-                                    <div class="music cards" id="music">
-                                        <div class="music-all">
-                                            <div class="music-button">
-                                                <div id="music-open">音乐列表</div>
-                                                <div id="music-close">回到一言</div>
-                                            </div>
-                                            <div class="music-control">
-                                                <i class="iconfont icon-next-one-copy" id="last"></i>
-                                                <div id="play">
-                                                    <i class="iconfont icon-play"></i>
-                                                </div>
-                                                <i class="iconfont icon-next-one" id="next"></i>
-                                            </div>
-                                            <div class="music-menu">
-                                                <div class="music-text">
-                                                    <span id="music-name">未播放音乐</span>
-                                                </div>
-                                                <div class="music-volume" style="display: none;">
-                                                    <div id="volume-ico">
-                                                        <i class="iconfont icon-volume-1"></i>
-                                                    </div>
-                                                    <input type="range" min="0" max="1" step="0.01" id="volume"
-                                                        oninput="changevolume()">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col times">
-                                    <!--时间-->
-                                    <div class="time cards">
-                                        <div class="timeshow" id="time">
-                                            2000&nbsp;年&nbsp;0&nbsp;月&nbsp;00&nbsp;日&nbsp;<span
-                                                class="weekday">星期一</span><br><span class="time-text">00:00:00</span>
-                                        </div>
-                                        <div class="weather">
-                                            <span id="city_text">天气</span>&nbsp;
-                                            <span id="wea_text">加载失败</span>&nbsp;
-                                            <span id="tem_night"></span>°C~
-                                            <span id="tem_day"></span>°C
-                                            <!-- <span id="win_text"></span>
-                                            <span id="win_speed"></span> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--分隔线-->
-                            <div class="line">
-                                <i class="iconfont icon-link"></i>
-                                <span class="line-text">网站列表</span>
-                            </div>
-                            <!--网站链接-->
-                            <div class="link">
-                                <!--第一组-->
-                                <div class="row">
-                                    <div class="col">
-                                        <a href="person/index.html" target="_blank">
-                                            <div class="link-card cards">
-                                                <i class="iconfont icon-blog-solid"></i>
-                                                <span class="link-name">谭明硕</span>
-                                            </div>
-                                        </a>
-                                    </div>
-									<div class="col 2">
-									    <a href="indexAbout/loding.html" target="_blank">
-									        <div class="link-card cards">
-									            <i class="iconfont icon-music-list"></i>
-									            <span class="link-name">刘金鹏</span>
-									        </div>
-									    </a>
-									</div>
-                                    <div class="col">
-                                        <a href="https://www.itzhiyin.cn" target="_blank">
-                                            <div class="link-card cards">
-                                                <i class="iconfont icon-cloud"></i>
-                                                <span class="link-name">织音博客</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!--第二组-->
-                                <div class="row" style="margin-top: 1.5rem;">
-                                    <div class="col">
-                                        <a href="https://jq.qq.com/?_wv=1027&k=dV6PYLdP" target="_blank">
-                                            <div class="link-card cards">
-                                                <i class="iconfont icon-a-daohangzhiyindingwei-05"></i>
-                                                <span class="link-name">织音云用户交流群</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col 2">
-                                        <a href="#" target="_blank">
-                                            <div class="link-card cards">
-                                                <i class="iconfont icon-z_shangpinheji"></i>
-                                                <span class="link-name">换个壁纸</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <a href="#" target="_blank">
-                                            <div class="link-card cards">
-                                                <i class="iconfont icon-lab"></i>
-                                                <span class="link-name">开发中</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+        <div class="row">
+          <div class="image col-lg-4 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
+          <div class="col-lg-8 d-flex flex-column align-items-stretch">
+            <div class="content ps-lg-4 d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="bi bi-chevron-right"></i> <strong>姓名:</strong> <span>谭明硕</span></li>
+                    <!-- <li><i class="bi bi-chevron-right"></i> <strong>网站:</strong> <span>mingming-4gkxmofped7eb63b-1253164392.tcloudbaseapp.com</span></li> -->
+                    <li><i class="bi bi-chevron-right"></i> <strong>电话:</strong> <span>17527611536</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>住址:</strong> <span>河南省南阳市镇平县侯集镇</span></li>
+					<li><i class="bi bi-chevron-right"></i> <strong>爱好:</strong> <span>写bug、玩游戏</span></li>
+                  </ul>
                 </div>
-                <!--展开菜单按钮-->
-                <div class="menu" id="switchmenu">
-                    <a class="munu-button cards" id="menu"><i class="iconfont icon-bars"></i></a>
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="bi bi-chevron-right"></i> <strong>生日:</strong> <span>2002-9-18</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>性格:</strong> <span>不喜约束、有点内向、偶尔emo</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>邮箱:</strong> <span>2663899831@qq.com</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>目标:</strong> <span>做最酷的自己</span></li>
+                  </ul>
                 </div>
-                <!--更多内容-->
-                <div class="more" id="more">
-                    <!--关闭按钮-->
-                    <div class="close fixed-top" id="close">
-                        <i class="iconfont icon-close"></i>
-                    </div>
-                    <div class="line" style="margin-top: 1rem;">
-                        <i class="iconfont icon-right-copy"></i>
-                        <span class="line-text">时间胶囊</span>
-                        <i class="iconfont icon-right"></i>
-                    </div>
-                    <div class="date" id="date">
-                        <div class="item" id="dayProgress">
-                            <div class="date-text" style="margin-top: 0rem;">今日已经度过了&nbsp;<span></span>&nbsp;小时</div>
-                            <div class="progress">
-                                <div class="progress-bar"></div>
-                            </div>
-                        </div>
-                        <div class="item" id="weekProgress">
-                            <div class="date-text">本周已经度过了&nbsp;<span></span>&nbsp;天</div>
-                            <div class="progress">
-                                <div class="progress-bar"></div>
-                            </div>
-                        </div>
-                        <div class="item" id="monthProgress">
-                            <div class="date-text">本月已经度过了&nbsp;<span></span>&nbsp;天</div>
-                            <div class="progress">
-                                <div class="progress-bar"></div>
-                            </div>
-                        </div>
-                        <div class="item" id="yearProgress">
-                            <div class="date-text">今年已经度过了&nbsp;<span></span>&nbsp;个月</div>
-                            <div class="progress">
-                                <div class="progress-bar"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="line">
-                        <i class="iconfont icon-right-copy"></i>
-                        <span class="line-text">杂七杂八</span>
-                        <i class="iconfont icon-right"></i>
-                    </div>
-                    <!--网站链接-->
-                    <div class="row">
-                        <div class="col">
-                            <a href="https://www.itzhiyin.cn/" target="_blank">
-                                <div class="link-card cards">
-                                    <span class="link-name">站点监测</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col 2">
-                            <a href="https://www.itzhiyin.cn/" target="_blank">
-                                <div class="link-card cards">
-                                    <span class="link-name">播放器</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a href="https://www.itzhiyin.cn/" target="_blank">
-                                <div class="link-card cards">
-                                    <span class="link-name">编辑器</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row" style="margin-top: 1.5rem;">
-                        <div class="col">
-                            <a href="https://www.itzhiyin.cn/" target="_blank">
-                                <div class="link-card cards">
-                                    <span class="link-name">时光相册</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col 2">
-                            <a href="https://www.itzhiyin.cn/" target="_blank">
-                                <div class="link-card cards">
-                                    <span class="link-name">文件库</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a id="openmore">
-                                <div class="link-card cards">
-                                    <span class="link-name">更多</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+              </div>
+             <div class="row mt-n4">
+                <div class="col-md-6 mt-5 d-md-flex align-items-md-stretch">
+                  <!-- <div class="count-box">
+                   <i class="bi bi-emoji-smile" style="color: #20b38e;"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="1044" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>度过的周末时光</strong> </p>
+                  </div> -->
+				</div>
+                <div class="col-md-6 mt-5 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <!-- <i class="bi bi-journal-richtextr" style="color: #8a1ac2;" ></i>
+                    <span data-purecounter-start="0" data-purecounter-end="" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong></strong> </p> -->
+					
+                  </div>
                 </div>
-                <!--更多页面-->
-                <div class="box" id="box" style="display: none">
-                    <div class="box-wrapper">
-                        <!--关闭按钮-->
-                        <div class="closebox fixed-top" id="closemore">
-                            <i class="iconfont icon-close"></i>
-                        </div>
-                        <!--左侧内容-->
-                        <div class="box-left">
-                            <div class="img-title">
-                                <span class="img-title">imsyy</span>
-                                <span class="img-text">.top</span><br />
-                                <span class="img-text">&nbsp;&nbsp;v&nbsp;2.2</span>
-                                <a href="https://www.itzhiyin.cn/" target="_blank"><i
-                                        class="iconfont icon-github1"></i></a>
-                            </div>
-                            <!--更多内容-->
-                            <div class="accordion" id="accordion">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne">
-                                            壁纸设置
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show"
-                                        aria-labelledby="headingOne" data-bs-parent="#accordion">
-                                        <div class="accordion-body">
-                                            <div class="set">
-                                                <div class="wallpaper" id="wallpaper">
-                                                    <div class="form-radio">
-                                                        <input type="radio" class="set-wallpaper" style="display: none;"
-                                                            id="radio1" value="1" name="wallpaper-type">
-                                                        <label for="radio1">默认壁纸</label>
-                                                    </div>
-                                                    <div class="form-radio">
-                                                        <input type="radio" class="set-wallpaper" style="display: none;"
-                                                            id="radio2" value="2" name="wallpaper-type">
-                                                        <label for="radio2">每日一图</label>
-                                                    </div>
-                                                    <div class="form-radio">
-                                                        <input type="radio" class="set-wallpaper" style="display: none;"
-                                                            id="radio3" value="3" name="wallpaper-type">
-                                                        <label for="radio3">随机风景</label>
-                                                    </div>
-                                                    <div class="form-radio">
-                                                        <input type="radio" class="set-wallpaper" style="display: none;"
-                                                            id="radio4" value="4" name="wallpaper-type">
-                                                        <label for="radio4">随机动漫</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--更新日志-->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                            aria-expanded="false" aria-controls="collapseTwo">
-                                            更新日志
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="headingTwo" data-bs-parent="#accordion">
-                                        <div class="accordion-body">
-                                            <div class="upnote">
-                                                <span class="uptext"><i
-                                                        class="iconfont icon-plus"></i>&nbsp;壁纸个性化设置</span>
-                                                <span class="uptext"><i
-                                                        class="iconfont icon-plus"></i>&nbsp;音乐播放器支持音量控制</span>
-                                                <span class="uptext"><i class="iconfont icon-wrench-fill"></i>&nbsp;修复
-                                                    CDN 加载缓慢</span>
-                                                <span class="uptext"><i
-                                                        class="iconfont icon-wrench-fill"></i>&nbsp;时光胶囊显示错误</span>
-                                                <span class="uptext"><i
-                                                        class="iconfont icon-wrench-fill"></i>&nbsp;移动端动画及细节</span>
-                                                <span class="uptext"><i
-                                                        class="iconfont icon-wrench-fill"></i>&nbsp;优化部分动画及细节</span>
-                                                <span class="uptext"><i class="iconfont icon-undo"></i>&nbsp;<a
-                                                        href="./old/" style="color:#efefef">点击此处返回旧版站点</a></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Aplayer-->
-                        <div class="box-right">
-                            <div id="aplayer"></div>
-                        </div>
-                    </div>
+                <div class="col-md-6 mt-5 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-award" style="color: #ffb459;"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>奖项</strong> 美国《时代周刊》2006年度风云人物，《感动中国》2008年度人物，联合国2019年度“地球卫士奖”联合获奖人，国际奥委会2022年”奥林匹克奖杯“获奖者</p>
+                  </div>
                 </div>
+				<div class="col-md-6 mt-5 d-md-flex align-items-md-stretch">
+				  <div class="count-box">
+				    <i class="bi bi-clock" style="color: #2cbdee;"></i>
+				    <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+				    <p><strong>自主项目</strong><a href="http://www.eachnet.com/">“易趣网模仿项目—html”<--点我</a> <a href="portfolio-details.html"><font color="red">“电影购票系统—java”<--还有我</a></font></p>
+				  </div>
+				</div>
+				
+              </div>
+            </div><!-- End .content-->
+			
+            <div class="skills-content ps-lg-4">
+				<div >学过的编程语言：</div>
+              <div class="progress">
+                <span class="skill">HTML <i class="val">99%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">CSS <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">JavaScript <i class="val">25%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+			  <div class="progress">
+			    <span class="skill">Java<i class="val">5%</i></span>
+			    <div class="progress-bar-wrap">
+			      <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+			    </div>
+			  </div>
+			  <div class="progress">
+			    <span class="skill">SQL<i class="val">5%</i></span>
+			    <div class="progress-bar-wrap">
+			      <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+			    </div>
+			  </div>
             </div>
-        </main>
-        <!-- 版权信息 -->
-        <footer id="footer" class="fixed-bottom footer">
-            <div class="power">Copyright&nbsp;&copy;&nbsp;2020
-                <script>
-                    document.write(' - ' + (new Date()).getFullYear())
-                </script>&nbsp;<a href="https://www.itzhiyin.cn/">织音博客分享</a>&nbsp;&amp;&nbsp;
-                <!-- 以下信息请不要修改哦 -->
-<!-- 以下信息请勿修改，织音博客温馨提示：请尊重作者原创，保留必要版权(www.itzhiyin.cn) -->
-                Made&nbsp;by&nbsp;<a href="https://www.itzhiyin.cn/" target="_blank">imsyy</a>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Me Section -->
+
+    <!-- ======= My Resume Section ======= -->
+	<!-- 我的简历 -->
+	<!-- 暂无简历 -->
+    <!-- End My Resume Section -->
+
+    <!-- ======= About Myself ======= -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-title">
+          <span>About Myself</span>
+          <h2>About Myself</h2>
+		  <h5>一名现代移动通信专业的大一学生🤓</h5><br />
+		  <h5>生性只对感兴趣的事物充满热情😊</h5><br />
+		  <h5>"喵喵教"的忠诚信徒💖</h5><br />
+		  <h5>喜欢听歌，热爱编程，没事边敲边摇🎶🎶</h5><br />
+		  <h5>丢了曾经的梦想，换上新的梦想起航〽️</h5><br />
+		  <h5>做最酷的自己😎</h5><br />
+		  <h5>正在努力保住发量</h5>
+			<p><font size="20">... ...</font></p>
+		  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+		  最伟大的思想和行动往往需要最微不足道的开始
+		  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+        </div>
+      </div>
+    </section><!-- End About Myself -->
+	<div class="section-title">
+	  <span>Just say something</span>
+	  <h2>Just say something</h2>
+	</div>
+    <!-- ======= Testimonials Section ======= -->
+	<!-- 我的朋友 -->
+    <section id="testimonials" class="testimonials">
+      <div class="container position-relative">
+
+        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <!-- <h3>李 柽</h3> -->
+                
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  等忙完这一阵，就可以忙下一阵了。
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <!-- <h3>郭 哲</h3> -->
+                
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  生活不止眼前的苟且，还有更多的狗血。
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
             </div>
-            <!-- 歌词显示 -->
-            <div id="lrc"></div>
-        </footer>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <!-- <h3>刘金鹏</h3> -->
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                 你只需要看着别人的精彩，而老天对你自有安排。
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <!-- <h3>耿淑玲</h3> -->
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                 不要轻易看不起谁，就算是杀马特，发量都比你多。
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <!-- <h3>xxx</h3> -->
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  活了这么多年，一直搞不明白一件事，拉钩为什么要上吊？
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
     </section>
-    <!-- noscript -->
-    <noscript>
-        <div class="noscript fixed-top">请开启 JavaScript</div>
-    </noscript>
-    <!-- JS -->
-    <script type="text/javascript" src="./js/main.js"></script>
-    <script type="text/javascript" src="./js/time.js"></script>
-    <script type="text/javascript" src="./js/js.cookie.js"></script>
-    <script type="text/javascript" src="./js/set.js"></script>
-    <script type="text/javascript" src="./js/cursor.js"></script>
-    <script type="text/javascript"
-        src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/5.1.0/js/bootstrap.min.js">
-    </script>
+    <!-- ======= My photo Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <span>My Photo</span>
+          <h2>My Photo</h2>
+        </div>
+
+        <ul id="portfolio-flters" class="d-flex justify-content-center">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-app">App</li>
+          <li data-filter=".filter-card">life</li>
+          <li data-filter=".filter-web">Web</li>
+        </ul>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>抖音</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>快手</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>图书馆</h4>
+              <p>Life</p>
+              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Web 2</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>微信</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>湖边</h4>
+              <p>Life</p>
+              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+		<!-- life开始 -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>湖边</h4>
+              <p>Life</p>
+              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+		    <div class="portfolio-img"><img src="assets/img/portfolio/life1 (1).jpg" class="img-fluid" alt=""></div>
+		    <div class="portfolio-info">
+		      <h4>001</h4>
+		      <p>Life</p>
+		      <a href="assets/img/portfolio/life1 (1).jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+		      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+		    </div>
+		  </div>
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+		    <div class="portfolio-img"><img src="assets/img/portfolio/life1 (2).jpg" class="img-fluid" alt=""></div>
+		    <div class="portfolio-info">
+		      <h4>002</h4>
+		      <p>Life</p>
+		      <a href="assets/img/portfolio/life1 (2).jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+		      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+		    </div>
+		  </div>
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+		    <div class="portfolio-img"><img src="assets/img/portfolio/life1 (3).jpg" class="img-fluid" alt=""></div>
+		    <div class="portfolio-info">
+		      <h4>003</h4>
+		      <p>Life</p>
+		      <a href="assets/img/portfolio/life1 (3).jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+		      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+		    </div>
+		  </div>
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+		    <div class="portfolio-img"><img src="assets/img/portfolio/life1 (4).jpg" class="img-fluid" alt=""></div>
+		    <div class="portfolio-info">
+		      <h4>004</h4>
+		      <p>Life</p>
+		      <a href="assets/img/portfolio/life1 (4).jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+		      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+		    </div>
+		  </div>
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+		    <div class="portfolio-img"><img src="assets/img/portfolio/life1 (5).jpg" class="img-fluid" alt=""></div>
+		    <div class="portfolio-info">
+		      <h4>005</h4>
+		      <p>Life</p>
+		      <a href="assets/img/portfolio/life1 (5).jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+		      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+		    </div>
+		  </div>
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+		    <div class="portfolio-img"><img src="assets/img/portfolio/life1 (6).jpg" class="img-fluid" alt=""></div>
+		    <div class="portfolio-info">
+		      <h4>006</h4>
+		      <p>Life</p>
+		      <a href="assets/img/portfolio/life1 (6).jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+		      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+		    </div>
+		  </div>
+		<!-- life结束 -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+		  
+		  
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+		    <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-10.png" class="img-fluid" alt=""></div>
+		    <div class="portfolio-info">
+		      <h4>网页二维码</h4>
+		      <p>App</p>
+		      <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+		      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+		    </div>
+		  </div>
+
+        </div>
+
+      </div>
+    </section><!-- End My photo Section -->
+
+    <!-- ======= Pricing Section ======= -->
+   <!-- End Pricing Section -->
+
+    <!-- ======= Contact Me Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Contact Me</span>
+          <h2>Contact Me</h2>
+          <p>如果你想了解我，欢迎给我发信息，很高兴和你做朋友</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box">
+                  <i class="bx bx-share-alt"></i>
+                  <h3>社交账号</h3>
+                  <div class="social-links">
+                    <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-envelope"></i>
+                  <h3>Email Me</h3>
+                  <p>2663899831@qq.com</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-phone-call"></i>
+                  <h3>Call Me</h3>
+                  <p>17527611536</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="你的名字" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="你的邮箱" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="标题" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="6" placeholder="信息" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <!-- <div class="error-message"></div> -->
+                <div class="sent-message">你的消息正在发送，谢谢你~</div>
+              </div>
+              <div class="text-center"><button type="submit">发送消息</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Me Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>☆*: .｡. o(≧▽≦)o .｡.:*☆</h3>
+	  <p>暂无域名，无备案</p>
+      <div class="social-links">
+        <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>M-2.0</span></strong>. 谭明硕
+      </div>
+      
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
