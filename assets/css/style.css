@@ -11,6 +11,9 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+   /* 渐变背景 */
+    /* background: linear-gradient(to right, #4B4453, #B0A8B9); */
+
 }
 
 a {
@@ -77,6 +80,21 @@ h1, h2, h3, h4, h5, h6 {
 #header.header-scrolled {
   height: 60px;
   background: rgba(25, 28, 31, 0.8);
+}
+.hero-about1{
+  position: relative;
+  text-align: center;
+
+  margin-top: 200px;
+}
+.hero-about2{
+  position: relative;
+
+  margin-top: 150px;
+}
+#box{
+  position: relative;
+  left:43%;
 }
 
 /*--------------------------------------------------------------
