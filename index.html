@@ -1,539 +1,427 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" >
-
-  <title>M的个人网站	</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <style>
-      .box {
-          width: 50px;
-          height: 50px;
-          background: #ffffff1c url(love.png) no-repeat;
-          background-position: left;
-          background-size: cover;
-          cursor: pointer;
-      }
-  
-      .boxactive {
-          background-position: right;
-          transition: background .75s steps(28);
-      }
-  </style>
-</head>
-
-<body>
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex justify-content-center align-items-center header-transparent">
-
-    <nav id="navbar" class="navbar">
-      <ul>
-		
-        <li><a class="nav-link scrollto active" href="#hero">主页</a></li>
-        <li><a class="nav-link scrollto" href="#about">关于</a></li>
-        <li><a class="nav-link scrollto" href="#" onclick="window.alert('暂无😊')">经历</a></li>
-        <li><a class="nav-link scrollto" href="#services">简介</a></li>
-        <li><a class="nav-link scrollto " href="#portfolio">照片墙</a></li>
-        <li class="dropdown"><a href="#"><span>待更新</span> <i class="bi bi-chevron-down"></i></a>
-          <ul>
-            <li><a href="#">0-1</a></li>
-            <li class="dropdown"><a href="#"><span>敬请期待</span> <i class="bi bi-chevron-right"></i></a>
-              <ul>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-              </ul>
-            </li>
-            <li><a href="#">0-2</a></li>
-            <li><a href="#">0-3</a></li>
-            <li><a href="#">0-4</a></li>
-          </ul>
-        </li>
-        <li><a class="nav-link scrollto" href="#contact">联系我</a></li>
-		
-      </ul>
-		
-      <i class="bi bi-list mobile-nav-toggle"></i>
-    </nav><!-- .navbar -->
-	
-  </header><!-- End Header -->
-	
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
-	  
-    <div class="hero-container">
-		
-      <div class="hero-about1">
-      <h1>谭明硕</h1>
-      <h2>一名大二学生，现代移动通信技术专业</h2>
-	 
-      <a href="#about" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
-    </div>
-    <div class="hero-about2">
-      <!-- 背景音乐 -->
-      <audio autoplay="autoplay" controls="controls" loop="loop" preload="auto"
-                      src="LastSummer.mp3">
-      </audio>
-      <!-- 彩蛋按钮 --><div id="box" class="box" ></div>
-  </div>
-		<script>
-		    var box = document.querySelectorAll('.box')
-		    box[0].addEventListener('click', () => {
-		        box[0].classList.add('boxactive')
-				alert("谢谢你，祝你好运ღ( ´･ᴗ･` )💕")
-		        // setTimeout(() => {
-		        //     box[0].classList.remove('boxactive')
-		        // }, 750)
-		        // 750ms后移除class：boxactive
-		    })
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<!-- Page Title Here -->
+		<title>
+			M的个人网站
+		</title>
+		<!-- Disable screen scaling-->
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+		<!-- Initializer -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<!-- Web fonts and Web Icons -->
+		<link rel="stylesheet" href="css/pageloader.css">
+		<link rel="stylesheet" href="css/stylesheet.css">
+		<link rel="stylesheet" href="css/stylesheet_1.css">
+		<link rel="stylesheet" href="https://cdn.bootcss.com/ionicons/1.5.2/css/ionicons.min.css">
+		<!-- Vendor CSS style -->
+		<link rel="stylesheet" href="css/foundation.min.css">
+		<link rel="stylesheet" href="css/jquery.fullPage.css">
+		<link rel="stylesheet" href="css/vegas.min.css">
+		<link rel="stylesheet" href="css/love.css">
+		<!-- Main CSS files -->
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/main_responsive.css">
+		<link rel="stylesheet" href="css/style-font1.css">
+		<!-- 花瓣飘落 -->
+		<script src="js/modernizr-2.7.1.min.js">
 		</script>
-    </div>
-	
-  </section><!-- End Hero -->
-	
-  <main id="main">
-
-    <!-- ======= About Me Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="section-title">
-          <span>About Me</span>
-          <h2>About Me</h2>
-		  
-        </div>
-
-        <div class="row">
-          <div class="image col-lg-4 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
-          <div class="col-lg-8 d-flex flex-column align-items-stretch">
-            <div class="content ps-lg-4 d-flex flex-column justify-content-center">
-              <div class="row">
-                <div class="col-lg-6">
-                  <ul>
-                    <li><i class="bi bi-chevron-right"></i> <strong>姓名:</strong> <span>谭明硕</span></li>
-                    <!-- <li><i class="bi bi-chevron-right"></i> <strong>网站:</strong> <span>mingming-4gkxmofped7eb63b-1253164392.tcloudbaseapp.com</span></li> -->
-                    <li><i class="bi bi-chevron-right"></i> <strong>电话:</strong> <span>17527611536</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>住址:</strong> <span>河南省南阳市镇平县侯集镇</span></li>
-					<li><i class="bi bi-chevron-right"></i> <strong>爱好:</strong> <span>写bug、玩游戏、听音乐</span></li>
-                  </ul>
-                </div>
-                <div class="col-lg-6">
-                  <ul>
-                    <li><i class="bi bi-chevron-right"></i> <strong>生日:</strong> <span>2002-9-18</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>性格:</strong> <span>不喜约束、有点内向、偶尔emo</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>邮箱:</strong> <span>2663899831@qq.com</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>目标:</strong> <span>做最酷的自己</span></li>
-                  </ul>
-                </div>
-              </div>
-             <div class="row mt-n4">
-                <div class="col-md-6 mt-5 d-md-flex align-items-md-stretch">
-                  <!-- <div class="count-box">
-                   <i class="bi bi-emoji-smile" style="color: #20b38e;"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="1044" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>度过的周末时光</strong> </p>
-                  </div> -->
+		<!-- <script src="js/sakura.js">
+		</script> -->
+		<style type="text/css">
+			/**普通指针样式**/ body{cursor:url(css/dorcandy.cur),default;} /**链接指针样式**/
+			a:hover{cursor:url(css/pointer.cur),pointer;}
+			/* 链接选择效果 */
+		</style>
+	</head>
+	<body id="menu" class="alt-bg">
+		<!-- 起始加载页 -->
+		<!-- 左上角标签 -->
+		<div class="page-loader" id="page-loader">
+			<div>
+				<i class="ion ion-loading-d">
+				</i>
+				<p>
+					欢迎来到M的个人网页~
+				</p>
+			</div>
+		</div>
+		<header class="header-top">
+			<div class="logo">
+				<a href="#home">
+					<img src="images/logo_large.png" alt="Logo Brand">
+				</a>
+			</div>
+			<div class="menu clearfix">
+				<a href="#">
+					<span style="color:#FFD700;">
+						hello
+					</span>
+				</a>
+			</div>
+		</header>
+		<!-- 侧边栏开始 -->
+		<nav class="quick-link count-6 nav-left">
+			<ul id="qmenu">
+				<li data-menuanchor="home">
+					<a href="#home">
+						<svg t="1661994829581" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2343" width="32" height="32"><path d="M864.4 383.8s28.6 65.9-8.9 95.6c-47.2 37.4-87.2 43.7-87.2 43.7s114.9 19.2 135.2-21-39.1-118.3-39.1-118.3zM772.2 693.4S753 828.3 714.4 865.7c-44.4 43-136 47.4-136 47.4s143.3 40.6 179.5-14.3c36.1-54.9 14.3-205.4 14.3-205.4z" fill="#FFECBE" p-id="2344"></path><path d="M738.1 915.3c-2.1 0-4.1-0.8-5.7-2.4l-23-22.9c-3.1-3.1-3.1-8.2 0-11.4 3.1-3.1 8.2-3.1 11.4 0l22.9 22.9c3.1 3.1 3.1 8.2 0 11.4-1.5 1.6-3.6 2.4-5.6 2.4zM704.6 933.6c-2.1 0-4.1-0.8-5.7-2.4l-25-25c-3.1-3.1-3.1-8.2 0-11.4 3.1-3.1 8.2-3.1 11.4 0l25 25c3.1 3.1 3.1 8.2 0 11.4-1.6 1.6-3.7 2.4-5.7 2.4zM660.6 937.5c-2.1 0-4.1-0.8-5.7-2.4l-20.2-20.2c-3.1-3.1-3.1-8.2 0-11.4 3.1-3.1 8.2-3.1 11.4 0l20.2 20.2c3.1 3.1 3.1 8.2 0 11.4-1.6 1.6-3.6 2.4-5.7 2.4zM765.9 890.5c-2.1 0-4.1-0.8-5.7-2.4l-24.6-24.6c-3.1-3.1-3.1-8.2 0-11.4 3.1-3.1 8.2-3.1 11.4 0l24.6 24.6c3.1 3.1 3.1 8.2 0 11.4-1.6 1.6-3.6 2.4-5.7 2.4zM862 537.7c-2.1 0-4.1-0.8-5.7-2.4l-20.1-20.1c-3.1-3.1-3.1-8.2 0-11.4 3.1-3.1 8.2-3.1 11.4 0l20.1 20.1c3.1 3.1 3.1 8.2 0 11.4-1.6 1.6-3.7 2.4-5.7 2.4zM821.6 540.1c-2.1 0-4.1-0.8-5.7-2.4l-13.4-13.4c-3.1-3.1-3.1-8.2 0-11.4 3.1-3.1 8.2-3.1 11.4 0l13.4 13.4c3.1 3.1 3.1 8.2 0 11.4-1.6 1.6-3.6 2.4-5.7 2.4zM894.8 523.3c-2.1 0-4.1-0.8-5.7-2.4l-24.6-24.6c-3.1-3.1-3.1-8.2 0-11.4 3.1-3.1 8.2-3.1 11.4 0l24.6 24.6c3.1 3.1 3.1 8.2 0 11.4-1.6 1.6-3.6 2.4-5.7 2.4zM913.7 497.3c-2.1 0-4.1-0.8-5.7-2.4l-24.2-24.2c-3.1-3.1-3.1-8.2 0-11.4 3.1-3.1 8.2-3.1 11.4 0l24.2 24.2c3.1 3.1 3.1 8.2 0 11.4-1.6 1.6-3.6 2.4-5.7 2.4zM777.2 852.1c-2.1 0-4.1-0.8-5.7-2.4L748.8 827c-3.1-3.1-3.1-8.2 0-11.4 3.1-3.1 8.2-3.1 11.4 0l22.7 22.7c3.1 3.1 3.1 8.2 0 11.4-1.6 1.6-3.7 2.4-5.7 2.4zM782.7 813.5c-2.1 0-4.1-0.8-5.7-2.4l-20.9-20.9c-3.1-3.1-3.1-8.2 0-11.4 3.1-3.1 8.2-3.1 11.4 0l20.9 20.9c3.1 3.1 3.1 8.2 0 11.4-1.6 1.6-3.7 2.4-5.7 2.4z" fill="#FFBA01" p-id="2345"></path><path d="M498 107.3c13 0 25.9 3.3 36.1 10 181.7 119.3 375.6 309.8 369.2 366.4-3.7 32.6-61.1 38.5-102.2 38.5-10.7 0-20.3-0.4-27.5-0.8h-0.7c-7 0-12.5 5.9-12 13 4.5 61.4 20.4 305.6-9.7 350.8-16.8 25.2-55.4 31.7-90.5 31.7-37 0-70.2-7.2-70.2-7.2s11.3-147.6 0-171.1c-5-10.4-42-15.6-77.6-15.6-33 0-64.7 4.5-68.6 13.4-8.8 20.3-2.2 172.5-2.2 172.5s-10.4 1.2-27.5 1.2c-26.9 0-70.4-3-114.9-18.4-65.7-22.8-41-277.7-32.4-351.1 1.1-9.6-6.4-17.8-15.8-17.8h-1.1c-6.8 0.5-15 0.8-24 0.8-24.1 0-53.9-2.6-77-13-26.7-11.9-37.5-45.9-20.9-69.9 68.3-98.6 244-250.9 326.5-318.9 11.4-9.7 27.3-14.5 43-14.5m0-24.1c-21.9 0-43.2 7.2-58.4 19.8-41.5 34.2-252.5 210.5-330.9 323.8-11.7 16.9-15.2 38.3-9.5 58.6 5.9 21.1 20.6 38.2 40.4 47.1 22.4 10 51.6 15.1 86.9 15.1 5.2 0 10.5-0.1 15.9-0.3-4.8 43.4-11.6 117.9-10.7 188.1 1.4 108.4 20.5 165.2 60.3 179 47.1 16.3 92.8 19.8 122.8 19.8 18.2 0 29.7-1.3 30.2-1.3 12.6-1.4 21.9-12.3 21.3-25-2.7-60.6-3.4-132.4-0.6-156.5 7.8-2 23.6-4.3 47.3-4.3 27.4 0 47.9 3.2 56.7 6 3.7 22.5 1.5 94.7-3.1 154.8-0.9 12 7.2 22.8 18.9 25.4 1.5 0.3 36.1 7.7 75.2 7.7 54.6 0 91.8-14.3 110.6-42.4 20.8-31.1 22.6-114.1 21.9-182.9-0.7-65.9-4.8-133.5-7.2-169.5 5.2 0.2 10.3 0.2 15.3 0.2 28.6 0 52.7-2.7 71.6-7.9 41.6-11.5 52.6-34.6 54.6-52 2.3-20.4-8.5-46.2-33.9-81.2-20.4-28.1-50.6-62.1-87.2-98.3-74.9-74.1-171.7-152.5-258.8-209.7-14-9.1-31.5-14.1-49.6-14.1z" fill="#FFBA01" p-id="2346"></path><path d="M365.9 291.1c-3 0-6-1.1-8.4-3.4-4.8-4.6-4.9-12.2-0.3-17l72.3-75c4.6-4.8 12.2-4.9 17-0.3 4.8 4.6 4.9 12.2 0.3 17l-72.3 75c-2.2 2.4-5.4 3.7-8.6 3.7zM311.2 343.1c-2.9 0-5.7-1-8-3.1-5-4.4-5.4-12-1-17l11.3-12.6c4.4-5 12-5.4 17-0.9 5 4.4 5.4 12 1 17l-11.3 12.6c-2.4 2.7-5.7 4-9 4z" fill="#FFBA01" p-id="2347"></path></svg>
+					</a>
+					<span class="title">
+						欢迎页面
+					</span>
+				</li>
+				<li data-menuanchor="about-us">
+					<a href="#about-us">
+						<svg t="1661995291938" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15107" width="32" height="32"><path d="M80 144m128 0l608 0q128 0 128 128l0 480q0 128-128 128l-608 0q-128 0-128-128l0-480q0-128 128-128Z" fill="#FFFFFF" p-id="15108"></path><path d="M128 193m112 0l576 0q112 0 112 112l0 447q0 112-112 112l-576 0q-112 0-112-112l0-447q0-112 112-112Z" fill="#A89BFA" p-id="15109"></path><path d="M816 896H208c-79.4 0-144-64.6-144-144V272c0-79.4 64.6-144 144-144h608c79.4 0 144 64.6 144 144v480c0 79.4-64.6 144-144 144zM208 160A112.12 112.12 0 0 0 96 272v480a112.12 112.12 0 0 0 112 112h608a112.12 112.12 0 0 0 112-112V272a112.12 112.12 0 0 0-112-112z" fill="#333333" p-id="15110"></path><path d="M352 416m-112 0a112 112 0 1 0 224 0 112 112 0 1 0-224 0Z" fill="#FFFFFF" p-id="15111"></path><path d="M368 432m-80 0a80 80 0 1 0 160 0 80 80 0 1 0-160 0Z" fill="#FFBF80" p-id="15112"></path><path d="M352 544a128 128 0 1 1 128-128 128.14 128.14 0 0 1-128 128z m0-224a96 96 0 1 0 96 96 96.11 96.11 0 0 0-96-96z" fill="#333333" p-id="15113"></path><path d="M528 670a167.6 167.6 0 0 0-56.48-125.64 160 160 0 0 1-231.42 8A167.43 167.43 0 0 0 192 670a66 66 0 0 0 66 66h204a66 66 0 0 0 66-66z" fill="#FFFFFF" p-id="15114"></path><path d="M528.64 681.13c0-29.5-6.79-51.78-21-72.53a32.08 32.08 0 0 0-43.26-9.27c-28.74 17.77-60.41 32.55-95.35 32.55-30.44 0-70.44-4.68-100.45-14.61a32 32 0 0 0-41.1 23.27c-2.8 12-3.51 25.46-3.51 40.59 0 21.87 15 39.23 32.84 39.23h212c25.2 0 59.84-17.36 59.84-39.23z" fill="#FFBF80" p-id="15115"></path><path d="M462 752H258a82.1 82.1 0 0 1-82-82 183 183 0 0 1 52.68-128.87 16 16 0 0 1 22.61-0.22 144 144 0 0 0 208.28-7.19 16 16 0 0 1 22.57-1.32A184.21 184.21 0 0 1 544 670a82.1 82.1 0 0 1-82 82zM241.41 574.92A150.92 150.92 0 0 0 208 670a50.06 50.06 0 0 0 50 50h204a50.06 50.06 0 0 0 50-50 152.19 152.19 0 0 0-40.27-103 176 176 0 0 1-230.32 7.95z" fill="#333333" p-id="15116"></path><path d="M592 384m32 0l160 0q32 0 32 32l0 0q0 32-32 32l-160 0q-32 0-32-32l0 0q0-32 32-32Z" fill="#333333" p-id="15117"></path><path d="M656 576m32 0l96 0q32 0 32 32l0 0q0 32-32 32l-96 0q-32 0-32-32l0 0q0-32 32-32Z" fill="#333333" p-id="15118"></path></svg>
+					</a>
+					<span class="title">
+						自我介绍
+					</span>
+				</li>
+				<li data-menuanchor="register">
+					<a href="#register">
+						<svg t="1661995074053" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4596" width="32" height="32"><path d="M887.433366 692.523707c-42.458537-24.576-94.208-17.982439-129.073951 12.787513l-52.948293-30.670049V523.089171c0-15.684683-8.391805-30.270439-21.978537-38.06283l-135.867317-78.223609v-67.034537c44.156878-14.985366 75.925854-56.744585 75.925854-105.996488 0-61.83961-50.051122-111.890732-111.890732-111.890731s-111.890732 50.051122-111.890731 111.890731c0 49.251902 31.768976 91.011122 75.925853 105.996488v67.034537l-135.867317 78.223609c-13.586732 7.79239-21.978537 22.378146-21.978536 38.06283v151.452097l-52.948293 30.670049c-34.865951-30.769951-86.715317-37.363512-129.073951-12.787512-53.447805 30.969756-71.630049 99.303024-40.96 152.750829 30.769951 53.447805 98.803512 71.829854 152.051512 40.96 42.458537-24.576 62.638829-72.92878 53.547707-118.684097l48.652488-28.272391 140.462829 80.920976c6.793366 3.896195 14.385951 5.894244 21.978537 5.894244s15.185171-1.998049 21.978536-5.894244L673.841951 739.278049l48.652488 28.27239c-9.091122 45.655415 11.189073 94.108098 53.547707 118.684098 53.248 30.869854 121.381463 12.587707 152.051513-40.96 30.769951-53.547707 12.587707-121.880976-40.660293-152.75083z m-672.343415 138.264976c-22.777756 13.187122-52.049171 5.394732-65.13639-17.582829-13.187122-22.877659-5.394732-52.248976 17.482927-65.436098 22.777756-13.187122 52.049171-5.394732 65.13639 17.582829 13.187122 22.877659 5.394732 52.248976-17.482927 65.436098zM463.547317 233.771707c0-26.474146 21.479024-47.953171 47.953171-47.95317s47.953171 21.479024 47.953171 47.95317-21.479024 47.953171-47.953171 47.953171-47.953171-21.479024-47.953171-47.953171z m169.834146 445.764683l-121.880975 70.231415-121.880976-70.231415V539.273366l121.880976-70.231415 121.880975 70.231415v140.263024z m239.665952 133.769366c-13.187122 22.877659-42.358634 30.769951-65.136391 17.582829-22.777756-13.187122-30.670049-42.558439-17.482926-65.436097s42.358634-30.769951 65.13639-17.582829c22.877659 13.187122 30.670049 42.458537 17.482927 65.436097z" p-id="4597" fill="#1296db"></path></svg>
+					</a>
+					<span class="title">
+						技能一览
+					</span>
+				</li>
+				<li data-menuanchor="when">
+					<a href="#when">
+						💖
+					</a>
+					<span class="title">
+						点个赞吧
+					</span>
+				</li>
+				<li data-menuanchor="contact">
+					<a href="#contact">
+						📧
+					</a>
+					<span class="title">
+						联系某某
+					</span>
+				</li>
+			</ul>
+		</nav>
+		<!-- 侧边栏结束 -->
+		<div class="page-cover" id="home">
+			<div class="cover-bg pos-abs full-size bg-img" data-image-src="https://imgs.aixifan.com/live/1495974356790/1495974356790.jpg">
+			</div>
+			<!-- 背景图片 -->
+			<div class="cover-bg pos-abs full-size slide-show">
+				<i class="img" data-src="https://hefollo.com/%E7%94%B5%E8%84%91%E7%AB%AF-4K%E5%9B%BE%E7%89%87/4K%E9%A3%8E%E6%99%AF%E7%B3%BB%E5%88%97/020a1051d89f40bd92ad4ce455860ff5.jpg">
+				</i>
+				<i class="img" data-src="https://hefollo.com/%E7%94%B5%E8%84%91%E7%AB%AF-4K%E5%9B%BE%E7%89%87/4K%E5%8A%A8%E6%BC%AB%E7%B3%BB%E5%88%97/41ff17357c8442b58da8b08da9a6c0ca.jpg">
+				</i>
+				<i class="img" data-src="https://hefollo.com/%E7%94%B5%E8%84%91%E7%AB%AF-4K%E5%9B%BE%E7%89%87/4K%E5%8A%A8%E6%BC%AB%E7%B3%BB%E5%88%97/84f153eb6e9f4de082852cca8764d06f.jpg">
+				</i>
+				<i class="img" data-src="https://hefollo.com/%E7%94%B5%E8%84%91%E7%AB%AF-4K%E5%9B%BE%E7%89%87/4K%E5%8A%A8%E6%BC%AB%E7%B3%BB%E5%88%97/581face2aae5490397f9367ac5335b8d.jpg">
+				</i>
+				<i class="img" data-src="https://hefollo.com/%E7%94%B5%E8%84%91%E7%AB%AF-4K%E5%9B%BE%E7%89%87/4K%E5%8A%A8%E6%BC%AB%E7%B3%BB%E5%88%97/1269070950.png">
+				</i>
+				<i class="img" data-src="https://hefollo.com/%E7%94%B5%E8%84%91%E7%AB%AF-4K%E5%9B%BE%E7%89%87/4K%E5%8A%A8%E6%BC%AB%E7%B3%BB%E5%88%97/2379395075.png">
+				</i>
+				<i class="img" data-src="https://hefollo.com/%E7%94%B5%E8%84%91%E7%AB%AF-4K%E5%9B%BE%E7%89%87/4K%E5%8A%A8%E6%BC%AB%E7%B3%BB%E5%88%97/91794489178d4d208257c0652a191424.jpg">
+				</i>
+				<i class="img" data-src="https://hefollo.com/%E7%94%B5%E8%84%91%E7%AB%AF-4K%E5%9B%BE%E7%89%87/4K%E5%8A%A8%E6%BC%AB%E7%B3%BB%E5%88%97/a980038dfa0d4b53b52e3ce77907d9b1.jpg">
+				</i>
+				<i class="img" data-src="https://hefollo.com/%E7%94%B5%E8%84%91%E7%AB%AF-4K%E5%9B%BE%E7%89%87/4K%E5%8A%A8%E6%BC%AB%E7%B3%BB%E5%88%97/cbcfdf1f271344308e01fd65cda77f41.jpg">
+				</i>
+			</div>
+			<div class="cover-bg pos-abs full-size bg-color" data-bgcolor="rgba(51, 2, 48, 0.12)">
+			</div>
+		</div>
+		<main class="page-main" id="mainpage">
+			<!-- 第一页 -->
+			<div class="section page-home page page-cent" id="s-home">
+				<div class="logo-container">
+					<!-- 主页图片 -->
+					<img class="h-logo" src="" alt="">
 				</div>
-                <div class="col-md-6 mt-5 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <!-- <i class="bi bi-journal-richtextr" style="color: #8a1ac2;" ></i>
-                    <span data-purecounter-start="0" data-purecounter-end="" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong></strong> </p> -->
-					
-                  </div>
-                </div>
-                <!-- <div class="col-md-6 mt-5 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="bi bi-award" style="color: #ffb459;"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>奖项</strong>平平凡凡，暂无奖项</p>
-                  </div>
-                </div> -->
-				<div class="col-md-6 mt-5 d-md-flex align-items-md-stretch">
-				  <div class="count-box">
-				    <i class="bi bi-clock" style="color: #2cbdee;"></i>
-				    <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
-				    <p><strong>自主项目</strong><a href="http://www.eachnet.com/">“易趣网模仿项目—html”<--点我</a> <a href="portfolio-details.html"><font color="red">“电影购票系统—java”<--还有我</a></font></p>
-				  </div>
+				<section class="content">
+					<header class="header">
+						<div class="h-left">
+							<h2 title="点这里访问博客~">
+								<a href="#">
+									<span style="color:#FFFFFF;">
+										谭明硕
+									</span>
+								</a>
+							</h2>
+						</div>
+						<div class="h-right">
+							<h3>
+								记录 着
+								<br>
+								我的成长
+							</h3>
+							<h4 class="subhead">
+								<a href="#when">
+									开始吧！！
+								</a>
+							</h4>
+						</div>
+					</header>
+				</section>
+				<div>
+					<article class="text">
+						<form id="mail-subscription" class="form magic send_email_form" method="get"
+						action="ajaxserver/serverfile.php">
+							<p class="invite center">
+								<script type="text/javascript" src="https://quote.51.la/q?id=20628121&mb=1">
+								</script>
+							</p>
+						</form>
+					</article>
 				</div>
-				
-              </div>
-            </div><!-- End .content-->
-			
-            <div class="skills-content ps-lg-4">
-				<div >掌握的编程技能</div>
-              <div class="progress">
-                <span class="skill">HTML <i class="val">99%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">CSS <i class="val">90%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">JavaScript <i class="val">25%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-			  <div class="progress">
-			    <span class="skill">Java<i class="val">5%</i></span>
-			    <div class="progress-bar-wrap">
-			      <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-			    </div>
-			  </div>
-			  <div class="progress">
-			    <span class="skill">SQL<i class="val">5%</i></span>
-			    <div class="progress-bar-wrap">
-			      <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-			    </div>
-			  </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Me Section -->
-
-    <!-- ======= My Resume Section ======= -->
-	<!-- 我的简历 -->
-	<!-- 暂无简历 -->
-    <!-- End My Resume Section -->
-
-    <!-- ======= About Myself ======= -->
-    <section id="services" class="services">
-      <div class="container">
-        <div class="section-title">
-          <span>About Myself</span>
-          <h2>About Myself</h2>
-		  <h5>一名现代移动通信专业的大一学生🤓</h5><br />
-		  <h5>生性只对感兴趣的事物充满热情😊</h5><br />
-		  <h5>"喵喵教"的忠诚信徒💖</h5><br />
-		  <h5>喜欢听歌，热爱编程，没事边敲边摇🎶🎶</h5><br />
-		  <h5>丢了曾经的梦想，换上新的梦想起航〽️</h5><br />
-		  <h5>做最酷的自己😎</h5><br />
-		  <h5>正在努力保住发量</h5>
-			<p><font size="20">... ...</font></p>
-		  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-		  最伟大的思想和行动往往需要最微不足道的开始
-		  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-        </div>
-      </div>
-    </section><!-- End About Myself -->
-	<div class="section-title">
-	  <span>Just say something</span>
-	  <h2>Just say something</h2>
-	</div>
-    <!-- ======= Testimonials Section ======= -->
-	<!-- 我的朋友 -->
-    <section id="testimonials" class="testimonials">
-      <div class="container position-relative">
-
-        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <!-- <h3>李 柽</h3> -->
-                
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  等忙完这一阵，就可以忙下一阵了。
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <!-- <h3>郭 哲</h3> -->
-                
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  生活不止眼前的苟且，还有更多的狗血。
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <!-- <h3>刘金鹏</h3> -->
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                 你只需要看着别人的精彩，而老天对你自有安排。
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <!-- <h3>耿淑玲</h3> -->
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                 不要轻易看不起谁，就算是杀马特，发量都比你多。
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <!-- <h3>xxx</h3> -->
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  活了这么多年，一直搞不明白一件事，拉钩为什么要上吊？
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section>
-    <!-- ======= My photo Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container">
-
-        <div class="section-title">
-          <span>My Photo</span>
-          <h2>My Photo</h2>
-        </div>
-
-        <ul id="portfolio-flters" class="d-flex justify-content-center">
-          <li data-filter="*" class="filter-active">All</li>
-          <li data-filter=".filter-app">App</li>
-          <li data-filter=".filter-card">life</li>
-          <li data-filter=".filter-web">Web</li>
-        </ul>
-
-        <div class="row portfolio-container">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>抖音</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>快手</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>图书馆</h4>
-              <p>Life</p>
-              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>微信</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>湖边</h4>
-              <p>Life</p>
-              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-		<!-- life开始 -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>湖边</h4>
-              <p>Life</p>
-              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-		  <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-		    <div class="portfolio-img"><img src="assets/img/portfolio/life1 (1).jpg" class="img-fluid" alt=""></div>
-		    <div class="portfolio-info">
-		      <h4>001</h4>
-		      <p>Life</p>
-		      <a href="assets/img/portfolio/life1 (1).jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-		      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-		    </div>
-		  </div>
-		  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-		    <div class="portfolio-img"><img src="assets/img/portfolio/life1 (2).jpg" class="img-fluid" alt=""></div>
-		    <div class="portfolio-info">
-		      <h4>002</h4>
-		      <p>Life</p>
-		      <a href="assets/img/portfolio/life1 (2).jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-		      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-		    </div>
-		  </div> -->
-		  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-		    <div class="portfolio-img"><img src="assets/img/portfolio/life1 (3).jpg" class="img-fluid" alt=""></div>
-		    <div class="portfolio-info">
-		      <h4>003</h4>
-		      <p>Life</p>
-		      <a href="assets/img/portfolio/life1 (3).jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-		      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-		    </div>
-		  </div>
-		  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-		    <div class="portfolio-img"><img src="assets/img/portfolio/life1 (4).jpg" class="img-fluid" alt=""></div>
-		    <div class="portfolio-info">
-		      <h4>004</h4>
-		      <p>Life</p>
-		      <a href="assets/img/portfolio/life1 (4).jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-		      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-		    </div>
-		  </div>
-		  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-		    <div class="portfolio-img"><img src="assets/img/portfolio/life1 (5).jpg" class="img-fluid" alt=""></div>
-		    <div class="portfolio-info">
-		      <h4>005</h4>
-		      <p>Life</p>
-		      <a href="assets/img/portfolio/life1 (5).jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-		      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-		    </div>
-		  </div>
-		  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-		    <div class="portfolio-img"><img src="assets/img/portfolio/life1 (6).jpg" class="img-fluid" alt=""></div>
-		    <div class="portfolio-info">
-		      <h4>006</h4>
-		      <p>Life</p>
-		      <a href="assets/img/portfolio/life1 (6).jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-		      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-		    </div>
-		  </div>
-		<!-- life结束 -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-		  
-		  
-		  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-		    <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-10.png" class="img-fluid" alt=""></div>
-		    <div class="portfolio-info">
-		      <h4>网页二维码</h4>
-		      <p>App</p>
-		      <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-		      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-		    </div>
-		  </div>
-
-        </div>
-
-      </div>
-    </section><!-- End My photo Section -->
-
-  
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <h3>☆*: .｡. o(≧▽≦)o .｡.:*☆</h3>
-      <div class="copyright">
-        &copy; <strong><span>M-3.0</span></strong>. 谭明硕
-      </div>
-      
-    </div>
-  </footer><!-- End Footer -->
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
+				<footer class="p-footer p-scrolldown">
+					<a href="#when">
+						<div class="arrow-d">
+							<div class="before">
+								你&nbsp;是&nbsp;否
+							</div>
+							<div class="after">
+								在&nbsp;期&nbsp;待&nbsp;着
+							</div>
+							<div class="circle">
+							</div>
+						</div>
+					</a>
+				</footer>
+			</div>
+			<!-- 第二页 -->
+			<div class="section page-when page page-cent" id="s-when">
+				<section class="content">
+					<label for="checkbox">
+						<input type="checkbox" id="checkbox" hidden>
+						<svg t="1639041971928" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3128" width="100px" height="100px" ><path d="M512 896a42.666667 42.666667 0 0 1-30.293333-12.373333l-331.52-331.946667a224.426667 224.426667 0 0 1 0-315.733333 223.573333 223.573333 0 0 1 315.733333 0L512 282.026667l46.08-46.08a223.573333 223.573333 0 0 1 315.733333 0 224.426667 224.426667 0 0 1 0 315.733333l-331.52 331.946667A42.666667 42.666667 0 0 1 512 896z" p-id="3129" id="heart"></path></svg>
+						<!-- <svg t="1662014112142" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2878" width="120" height="120"><path d="M516.809433 921.67163S-142.389927 480.534026 144.538823 164.134706c18.112122-19.954032 40.522035-35.712601 65.592485-45.84311C335.278905 67.843709 429.932647 119.417208 478.026981 157.995003c20.568002 16.577196 50.038573 16.577196 70.606576 0C597.648846 118.700909 694.963126 65.797142 823.794544 121.259119c19.851704 8.595583 38.066154 20.670331 53.517737 35.814929C1183.78575 456.691516 516.809433 921.67163 516.809433 921.67163" p-id="2879" id="heart"></path></svg> -->
+						<span id="love"></span>
+					</label>
+					<div class="site-config" data-date="7/18/2021 00:00:00" data-date-timezone="+0">
+					</div>
+					<!-- <div class="clock clock-countdown"> 透明圆圈-->
+						
+						<!-- <header class="header">
+							
+						</header>
+						 -->
+						<!-- 时钟数字显示 -->
+						<!-- <div class="elem-left">
+							<div class="digit hours">
+								00
+							</div>
+							<div class="text">
+								时
+							</div>
+						</div>
+						<div class="elem-center">
+							<span class="text top">
+								<img class="img" alt="Logo" src="images/logo_large.png">
+							</span>
+							<div class="digit days">
+								373
+							</div>
+							<div class="text">
+								日
+							</div>
+						</div>
+						<div class=" elem-right">
+							<div class="digit minutes">
+								00
+							</div>
+							<div class="text">
+								分
+							</div>
+						</div>
+						<div class="second">
+							<input class="knob container" id="second-knob" data-width="400" data-height="400"
+							data-displayInput="false" data-fgColor="#fff" data-bgColor="rgba(255,255,255,0)"
+							data-thickness=".07" value="0" data-displayPrevious="true" data-max="6000">
+						</div> -->
+					<!-- </div> -->
+				</section>
+				<footer class="p-footer p-scrolldown">
+					<a href="#register">
+						<div class="arrow-d">
+							<div class="before">
+								
+							</div>
+							<div class="after">
+								
+							</div>
+							<div class="circle">
+							</div>
+						</div>
+					</a>
+				</footer>
+			</div>
+			<!-- 第三页 -->
+			<div class="section page-register page page-cent " id="s-register">
+				<section class="content">
+					<header class="p-title">
+						<h3>
+							<span style="color:#FFFFFF;">
+								〽️技能一览
+							</span>
+						</h3>
+					</header>
+					<div id="tech">
+						<div>
+						  <span>HTML</span>
+						</div>
+						<div>
+						  <img src="images/logo/html.png" alt="" style="width: 40px; height: 40px" />
+						  <span>超文本标记语言 网页的骨架 包含所有网页元素</span>
+						</div>
+						<div >
+						  <span>CSS</span>
+						</div>
+						<div >
+						  <img src="images/logo/css.png" alt="" style="width: 40px; height: 40px"/>
+						  <span>网页的化妆师 页面元素的布局排版 样式的美化</span>
+						</div>
+						<div>
+						  <span>JavaScript</span>
+						</div>
+						<div>
+						  <img src="images/logo/js.png" alt="" style="width: 40px; height: 40px" /><span>动态网站浏览器端脚本语言 简单的数据处理</span>
+						</div>
+						<div>
+						  <span>MySQL</span>
+						</div>
+						<div>
+						  <img src="images/logo/mysql.png" alt="" style="width: 40px; height: 40px" />
+						  <span>最流行的关系型数据库管理系统</span>
+						</div>
+						<div>
+						  <span>Git</span>
+						</div>
+						<div>
+						  <img src="images/logo/git.png" alt="" style="width: 40px; height: 40px" />
+						  <span>代码版本控制器 可将代码上传git远程网站</span>
+						</div>
+					</div>
+					<div>
+						<article class="text">
+							
+						</article>
+					</div>
+				</section>
+				<footer class="p-footer p-scrolldown">
+					<a href="#about-us">
+						<div class="arrow-d">
+							<div class="before">
+								走&nbsp;的&nbsp;很&nbsp;慢
+							</div>
+							<div class="after">
+								但&nbsp;不&nbsp;会&nbsp;停
+							</div>
+							<div class="circle">
+							</div>
+						</div>
+					</a>
+				</footer>
+			</div>
+			<!-- 第四页 -->
+			<div class="section page-about page page-cent" id="s-about-us">
+				<section class="content">
+					<header class="p-title">
+						<h3>
+							😎 关于我
+						</h3>
+					</header>
+					<h5>我是一只代码缝合怪🤓</h5><br />
+					<h5>日常生活就是复制粘贴🗒️</h5><br />
+					<h5>生性只对感兴趣的事物充满热情😊</h5><br />
+					<h5>"喵喵教"的忠诚信徒💖</h5><br />
+					<h5>喜欢听歌，热爱编程，没事边敲边摇🎶🎶</h5><br />
+					<h5>丢了曾经的梦想，换上新的梦想起航〽️</h5><br />
+					<h5>做最酷的自己😎</h5><br />
+					<h5><font size="20">... ...</font></h5><br />	
+				</section>
+				<footer class="p-footer p-scrolldown">
+					<a href="#contact">
+						<div class="arrow-d">
+							<div class="before">
+								关&nbsp;于
+							</div>
+							<div class="after">
+								自&nbsp;己
+							</div>
+							<div class="circle">
+							</div>
+						</div>
+					</a>
+				</footer>
+			</div>
+			<!-- 第五页 -->
+			<div class="section page-contact page page-cent" id="s-contact">
+				<section class="content">
+					<header class="p-title">
+						<h3>
+							🔚 
+						</h3>
+					</header>
+					<div class="contact">
+						<div class="row">
+							<div class="medium-6 columns left">
+								<ul>
+									<li>
+										<h4>
+											Email
+										</h4>
+										<p>
+											<a href="mailto://contact@mail.com">
+												2663899831@qq.com
+											</a>
+										</p>
+									</li>
+									
+								</ul>
+							</div>
+							<div class="medium-6 columns social-links right">
+								<ul>
+									<li class="show-for-medium-up">
+										<h4>
+											寻觅踪迹
+										</h4>
+										<p >
+												<a href="https://m-521.gitee.io/home">
+												—>另一个地方~
+												</a>
+										</p>
+									</li>
+									<li>
+										<p>
+											<a href="https://m-521.gitee.io/home">
+											<img src="images/logo_large.png" alt="Logo" class="logo">
+											</a>
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<!-- 第六页 -->
+		</main>
+		<script src="js/jquery-1.11.2.min.js">
+		</script>
+		<script src="js/all.js">
+		</script>
+		<script src="js/jquery.downCount.js">
+		</script>
+		<script src="js/form_script.js">
+		</script>
+		<script src="js/main.js">
+		</script>
+	</body>
 
 </html>
